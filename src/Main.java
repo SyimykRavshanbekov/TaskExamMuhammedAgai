@@ -31,20 +31,6 @@ public class Main {
         Animal[] animals = {dog, dog2, cat1, cat2, dog2, eagle1, eagle2, eagle3, eagle4, eagle5, eagle6, whiteSwan1, whiteSwan2, whiteSwan3, whiteSwan4, whiteSwan5, bird1, bird2, bird3};
         Animal[] animalsFlyable = {eagle1, eagle2, eagle3, eagle4, eagle5, eagle6, whiteSwan1, whiteSwan2, whiteSwan3, whiteSwan4, whiteSwan5, bird1, bird2, bird3};
         Animal[] animalsNotFlyable = {dog, dog2, cat1, cat2};
-//        Animal[] animalsFlyable = new Animal[14];
-//        int counter1 = 0;
-//        Animal[] animalsNotFlyable = new Animal[4];
-//        int counter2 = 0;
-//        for (int i = 0; i < animals.length; i++) {
-//            if (animals[i].getClass().isInterface()) {
-//                animals[counter1] = animalsFlyable[counter1];
-//                counter1++;
-//            }
-//            else {
-//                animalsNotFlyable[counter2] = animalsFlyable[counter2];
-//                counter2++;
-//            }
-//        }
 
         Animal[] asansAnimal = {cat1, dog, eagle1 ,eagle2, eagle3, eagle4, eagle5, whiteSwan1, whiteSwan2, whiteSwan3, bird1, bird2};
         Animal[] usonAnimal = {cat1, dog, dog2, eagle1 ,eagle2, eagle3, eagle4, whiteSwan1, whiteSwan2, bird1, bird2, bird3};
@@ -70,20 +56,7 @@ public class Main {
         Technique[] techniques = {airplane1, airplane2, bayraktar, tank1, tank2, tank3, helicopter1, helicopter2, helicopter3, helicopter4, helicopter5, sidan};
         Technique[] techniquesNotFlyable = {tank1, tank2, tank3, sidan};
         Technique[] techniquesFlyable = {airplane1, airplane2, bayraktar, helicopter1, helicopter2, helicopter3, helicopter4, helicopter5};
-//        Technique[] techniquesNotFlyable = new Technique[4];
-//        int index1 = 0;
-//        Technique[] techniquesFlyable = new Technique[8];
-//        int index2 = 0;
-//        for (int i = 0; i < techniques.length; i++) {
-//            if (techniques[i].getClass().isInterface()) {
-//                techniques[index1] = techniquesFlyable[index1];
-//                index1++;
-//            }
-//             else {
-//                techniques[index2] = techniquesNotFlyable[index2];
-//                index2++;
-//            }
-//        }
+
 
 
         Technique[] asansTechnika = {airplane1, airplane2, bayraktar};
@@ -94,6 +67,8 @@ public class Main {
         Person uson = new Person(856, "Uson", 43, usonAnimal, usonTechnika);
         Person adyl = new Person(34567, "Adyl", 25, adylAnimal, adylTechnika);
 
+
+        //Метод 1
 //        String name = scanner.nextLine();
 //
 //        switch (name){
@@ -103,6 +78,7 @@ public class Main {
 //            default -> System.out.println("Error name");
 //        }
 
+        //Метод2
         getRandom(techniquesNotFlyable, techniquesFlyable, animalsFlyable, animalsNotFlyable);
 
     }
